@@ -3,7 +3,7 @@
 FROM nginx:stable-alpine
 
 # ระบุผู้ดูแล (ไม่จำเป็น แต่เป็น best practice)
-LABEL maintainer="Cmon <icmon0955@gmail.com>"
+LABEL maintainer="Your Name <your.email@example.com>"
 
 # รับชื่อ PHP container จาก docker-compose.yml
 ARG PHP_CONTAINER
