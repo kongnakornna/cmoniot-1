@@ -29,7 +29,28 @@ project-root/
 │       ├── opcache.ini
 │       └── xdebug.ini
 
-
+netstat -ano | findstr :80
+PS C:\app\cmoniot\frontend> netstat -ano | findstr :80
+  TCP    0.0.0.0:808            0.0.0.0:0              LISTENING       6296
+  TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       15860
+  TCP    0.0.0.0:8082           0.0.0.0:0              LISTENING       15860
+  TCP    0.0.0.0:8086           0.0.0.0:0              LISTENING       15860
+  TCP    0.0.0.0:8091           0.0.0.0:0              LISTENING       15860
+  TCP    [::]:808               [::]:0                 LISTENING       6296
+  TCP    [::]:8080              [::]:0                 LISTENING       15860
+  TCP    [::]:8082              [::]:0                 LISTENING       15860
+  TCP    [::]:8086              [::]:0                 LISTENING       15860
+  TCP    [::]:8091              [::]:0                 LISTENING       15860
+  TCP    [::1]:8080             [::]:0                 LISTENING       22412
+  TCP    [::1]:8082             [::]:0                 LISTENING       22412
+  TCP    [::1]:8086             [::]:0                 LISTENING       22412
+  TCP    [::1]:8091             [::]:0                 LISTENING       22412
+  TCP    [2001:fb1:ac:6ada:64ab:450a:ca36:63e4]:50431  [2404:6800:4001:80d::200a]:443  ESTABLISHED     5688
+  TCP    [2001:fb1:ac:6ada:64ab:450a:ca36:63e4]:50724  [2404:6800:4001:80c::200a]:443  ESTABLISHED     5688
+  TCP    [2001:fb1:ac:6ada:64ab:450a:ca36:63e4]:52023  [2404:6800:4001:80d::200a]:443  CLOSE_WAIT      5688
+  TCP    [2001:fb1:ac:6ada:64ab:450a:ca36:63e4]:57836  [2404:6800:4001:80c::200a]:443  CLOSE_WAIT      2220
+  UDP    [fe80::2a1b:c01a:c7d7:80da%27]:1900  *:*                                    8332
+  UDP    [fe80::2a1b:c01a:c7d7:80da%27]:58067  *:*                                    8332
 
 | Service       | Container Name   | Default Ports | Version       | Description                      |
 |---------------|------------------|---------------|---------------|----------------------------------|
