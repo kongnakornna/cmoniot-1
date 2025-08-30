@@ -1,9 +1,8 @@
 FROM php:8.3-apache
 
-ENV TZ=Asia/Jakarta
+ENV TZ=Asia/Bangkok
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime \
-    && ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/local/include/ \
     && echo $TZ > /etc/timezone \
     && apt-get update \
     && apt-get -y --no-install-recommends install \

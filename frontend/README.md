@@ -13,6 +13,24 @@ influxdb_host=http://172.25.99.60:8086
 influxdb_token=TGGzQa2jyLRyfhFqtntd32AwbNbWDy9PdfM0e9edAcm50XfRqCmka3maBk_9OIiXCYelOcWT65n7kMBkylsZhQ==
 Simple, lightweight and useful **LAMP & LEMP** stacks to use on Docker via Docker Compose. With **PostgreSQL, MongoDB, Redis, RabbitMQ, PhpMyAdmin, PGAdmin and Mongo-Express.** You can generate your environment in whatever way you desire.
 
+
+project-root/
+├── docker-compose.yml
+├── public/
+│   └── index.php
+├── logs/
+├── docker/
+│   ├── nginx/
+│   │   ├── default.conf
+│   │   └── Dockerfile
+│   └── php83/
+│       ├── Dockerfile
+│       ├── php.ini
+│       ├── opcache.ini
+│       └── xdebug.ini
+
+
+
 | Service       | Container Name   | Default Ports | Version       | Description                      |
 |---------------|------------------|---------------|---------------|----------------------------------|
 | Apache Server | demet-apache     | 80 / 443      | 2.4:alpine    | Apache Web Server                |
